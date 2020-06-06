@@ -1,1 +1,3 @@
 [{"title":"Test Title","text":"Test text"}]
+
+//store and retrieve notes using the `fs` module.
