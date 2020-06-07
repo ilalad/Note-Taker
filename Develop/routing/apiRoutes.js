@@ -1,18 +1,20 @@
-const notesData = require('../db/db.json');
+const getNotes = require('../db/db.json');
+const saveNote = require('../db/db.json');
+const deleteNote = require('../db/db.json');
 
 module.exports = function (app) {
     app.get('/api/notes', function (req, res) {
-        res.json(notesData);
+        res.json(getNotes);
     });
 
     app.post('/api/notes', function (req, res) {
-        notesData.push(req.body);
+        saveNote.push(req.body);
         res.json(true);
     });
 
     app.delete('/api/notes/:id', function () {
-        notesData = [];
+        deleteNote = [];
 
-        console.log(notesData);
+        console.log();
     })
 }

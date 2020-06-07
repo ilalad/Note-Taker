@@ -1,21 +1,8 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-var express = require("express";
-)
 var $noteTitle = $(".note-title");
 var $noteText = $(".note-textarea");
 var $saveNoteBtn = $(".save-note");
 var $newNoteBtn = $(".new-note");
 var $noteList = $(".list-container .list-group");
-
-
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
-
-// express server
-
-var app = express();
-var PORT = process.env.PORT || 8080;
 
 
 // activeNote is used to keep track of the note in the textarea
@@ -157,8 +144,3 @@ $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
-
-// listener
-app.listen(PORT, function () {
-  console.log("App listening on PORT: " + PORT);
-});
