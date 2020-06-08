@@ -1,7 +1,6 @@
-const noteJSON = require("./db/db.json");
+const noteJSON = require("../db/db.json");
 
 // get all notes JSON
-
 module.exports = app => {
     app.get('/api/notes', (req, res) => {
         return res.json(noteJSON);
