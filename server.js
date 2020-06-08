@@ -1,8 +1,6 @@
 // DEPENDENCIES
 const express = require("express");
 
-// const bodyParser = require("body-parser");
-
 // express server
 const app = express();
 const fs = require("fs");
