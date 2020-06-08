@@ -4,4 +4,3 @@
         "text": "Test text"
     }
 ]
-// to store and retrieve notes using the `fs` module.
