@@ -3,7 +3,6 @@ const express = require("express");
 
 // express server
 const app = express();
-const fs = require("fs");
 
 const PORT = process.env.PORT || 8080;
 
@@ -11,7 +10,8 @@ const PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
-// route handling and parses our instance of express, app and fs
+
+// route handling and parses our instance of express, app
 
 require('./routing/apiRoutes.js')(app);
 require('./routing/htmlRoutes.js')(app);
