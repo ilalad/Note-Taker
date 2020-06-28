@@ -8,7 +8,7 @@ It will use an express backend, save and retrieve note data from a JSON file.
 
 Install:
 
-NPM i  to install the express package.
+run `npm install` from your terminal to install dependencies.
 
 
 ![](images/screenshot.png)
